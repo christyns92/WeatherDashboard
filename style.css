@@ -1,0 +1,141 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+header {
+    background: rgb(22, 196, 202);
+    background: linear-gradient(90deg, rgb(15, 174, 223) 0%, rgb(58, 220, 231) 100%);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+aside h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 2vh 1vw;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+button {
+    margin: 2vh 0vw;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #33FFFA;
+}
+
+#sidebar {
+    margin-top: 2vh;
+    color: white;
+}
+
+#recentSearch {
+    margin: 0;
+    color: white;
+}
+
+#recentSearch ul {
+    border-top: 3px solid grey;
+    padding: 0;
+    color: white;
+}
+
+.listStyle {
+    justify-content: center;
+    background-color: white;
+    margin: 2vh 0vw;
+    padding: 1vh 0vw;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+#currentDayWeather {
+    border: 2px solid grey;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    max-height: 60%;
+    color: #33FFFA;
+}
+
+#currentDayWeather h1 {
+    font-size: 1.9rem;
+    padding-top: 2vh;
+    font-weight: bold;
+    color: #2BBEDD;
+}
+
+#currentDayWeather h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#fiveDayWeather {
+    align-content: flex-start;
+    justify-content: space-between;
+    margin: 0vh 1vw;
+    color: #2BBEDD;
+}
+
+#fiveDayWeather h2 {
+    font-size: 2rem;
+    align-self: flex-end;
+    float: left;
+    padding-left: 0;
+    font-weight: bold;
+    color: #2BBEDD;
+}
+
+.myCard {
+    max-width: 14rem;
+    max-height: 20rem;
+    height: 20rem;
+    color: white;
+}
+
+.myCardHeader {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 0;
+    padding-top: 1vh;
+    color: white;
+}
+
+.myCardText {
+    font-size: 125%;
+    font-weight: 600;
+    padding: 1.5vh 0vw;
+}
+
+.myCardBody {
+    padding: 0;
+    padding: 2vh 0 .5vw 0;
+    color: #33FFFA;
+}
+
+.myCardPhoto {
+    margin: -26px;
+    color: #33FFFA;
+}
+
+.btn-primary,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: #2BBEDD;
+    border-color: #2BBEDD;
+}
