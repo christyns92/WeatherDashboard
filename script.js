@@ -50,6 +50,13 @@ function getWeather() {
         .then(function(data2) {
             console.log(data2);
             dayUV.text("UV Index: " + data2.current.uvi);
+            if (data2.current.uvi > 6) {
+                dayUV.css('background', '#aa2020')
+            } else if (data2.current.uvi > 4) {
+                dayUV.css('background', '#aa6a20')
+            } else {
+                dayUV.css('background', '#40aa20')
+            }
             dayIcon.prepend('<img src = "http://openweathermap.org/img/wn/' + data2.current.weather[0].icon + '@2x.png" />');
             dayTemp.text("Temp: " + data2.current.temp + "°F");
             dayWind.text("Wind: " + data2.current.wind_speed + " MPH");
@@ -109,6 +116,7 @@ recentSearch.click(function(event) {
     userInput = tar.text();
     updateDiv();
     getWeather();
+    getAPI();
     save();
     check();
     display();
