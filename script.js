@@ -47,8 +47,6 @@ function getWeather() {
             })
 
         // gathers current weather, uvi, temp, wind speed and humidity
-
-
         .then(function(data2) {
             console.log(data2);
             dayUV.text("UV Index: " + data2.current.uvi);
